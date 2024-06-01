@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">currency converter</string>
+    <string name="enter_your_currency_value">enter your currency value</string>
+    <string name="todo">TODO</string>
+    <string name="bdt_to_usd">BDT to USD</string>
+    <string name="bd_to_usd">BDT TO USD</string>
+    <string name="usd_to_bdt">USD TO BDT</string>
+    <string name="result">Result</string>
+    <string name="euro_to_bdt">EURO TO BDT</string>
+    <string name="bdt_to_euro">BDT TO EURO</string>
+</resources>
