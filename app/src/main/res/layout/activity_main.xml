@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -12,44 +11,66 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="100dp"
+        android:contentDescription="@string/converter_image"
+        android:layout_marginBottom="50dp"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/currency" />
+        android:src="@drawable/currency_logo"
+      />
 
-    <TextView
-        android:id="@+id/tv_show_result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="40dp"
-        android:text="@string/result"
 
-        android:textSize="40sp" />
-
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center_horizontal">
 
     <EditText
         android:id="@+id/et_test"
-        android:hint="@string/enter_your_currency_value"
+        android:autofillHints="currency_value"
+        android:hint="@string/enter_currency_value"
         android:inputType="number"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="40dp"
-        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_width="0dp"
+        android:layout_gravity="end"
+        android:layout_weight="2"
         android:onClick="EditViewOneOnClick"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight=".5"
+        android:contentDescription="@string/equal_image"
+        android:src="@drawable/equal"/>
+
+    <TextView
+        android:id="@+id/tv_show_result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/result"
+        android:layout_weight="1"
+        android:paddingTop="15dp"
+        android:textSize="20sp" />
+  </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        >
+        android:gravity="center_horizontal">
     <Button
         android:id="@+id/btn_test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
         android:text="@string/usd_to_bdt"
-        android:layout_gravity="center_horizontal"
-        />
+        android:layout_gravity="center_horizontal"/>
+
 
     <Button
         android:id="@+id/bt_test"
@@ -57,37 +78,30 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:text="@string/bd_to_usd"
-        android:layout_gravity="center_horizontal"/>
-
-
-  </LinearLayout>
+        android:layout_gravity="center_horizontal" />
+    </LinearLayout>
 
   <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:orientation="horizontal"
-      android:gravity="center_horizontal"
-      >
+      android:backgroundTint="@android:color/holo_blue_bright"
+      android:gravity="center_horizontal">
     <Button
-        android:id="@+id/btns_test"
+        android:id="@+id/second_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
         android:text="@string/euro_to_bdt"
-        android:layout_gravity="center_horizontal"
-        />
+        android:layout_gravity="center_horizontal" />
 
     <Button
-        android:id="@+id/btnss_test"
+        android:id="@+id/second_btn_two"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:text="@string/bdt_to_euro"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal" />
   </LinearLayout>
-
-
-
-
 
 </LinearLayout>

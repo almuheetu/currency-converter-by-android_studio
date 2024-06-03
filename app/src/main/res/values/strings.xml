@@ -8,4 +8,9 @@
     <string name="result">Result</string>
     <string name="euro_to_bdt">EURO TO BDT</string>
     <string name="bdt_to_euro">BDT TO EURO</string>
+    <string name="resultss">Result =</string>
+    <string name="results">Results</string>
+    <string name="equal_image">equal image</string>
+    <string name="converter_image">converter image</string>
+    <string name="enter_currency_value">enter currency value…</string>
 </resources>
